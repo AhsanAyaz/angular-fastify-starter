@@ -1,0 +1,3 @@
+<ul class="list-group">
+  <app-user-list-item (onUserDelete)="onUserDeleteHandler($event);" [user]="user" *ngFor="let user of users;"></app-user-list-item>
+</ul>

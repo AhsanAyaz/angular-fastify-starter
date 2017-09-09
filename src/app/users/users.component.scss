@@ -1,0 +1,16 @@
+:host{
+    display: block;
+}
+
+#usersPage{
+    padding: 30px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    .add-user-btn{
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        z-index: 2;
+    }
+}

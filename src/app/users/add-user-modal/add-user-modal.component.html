@@ -1,0 +1,23 @@
+<form [formGroup]='addUserForm' novalidate (ngSubmit)='submitForm(addUserForm.value)'>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left"></h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label for="emailInput">Email address</label>
+      <input autocomplete="off" type="email" class="form-control" formControlName='email' id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="passwordInput">Password</label>
+      <input type="password" class="form-control" formControlName='password' id="passwordInput" placeholder="Password">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Close</button>
+    <button [disabled]='addUserForm.invalid' type="submit" class="btn btn-primary">Save</button>
+  </div>    
+</form>

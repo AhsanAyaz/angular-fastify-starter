@@ -1,0 +1,18 @@
+.list-group-item{
+    position: relative;
+    .delete-btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: none;
+    }
+    &:hover{
+        background: #eee;
+        transition: 1s ease all;
+        
+        .delete-btn{
+            cursor: pointer;
+            display: block;
+        }
+    }
+}

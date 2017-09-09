@@ -1,0 +1,23 @@
+<li class="list-group-item">
+    <div class="row w-100">
+        <div class="col-12 col-sm-6 col-md-3 px-0">
+            <img [src]="user?.picture?.large" class="rounded-circle mx-auto d-block img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+            <span class="fa fa-mobile fa-2x text-success float-right pulse" title="online now"></span>
+            <label class="name lead">{{user?.name?.first}} {{user?.name?.last}}</label>
+            <br> 
+            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
+            <span class="text-muted">{{user?.location?.street}}</span>
+            <br>
+            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(870) 288-4149"></span>
+            <span class="text-muted small">{{user.phone}}</span>
+            <br>
+            <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" data-original-title="" title=""></span>
+            <span class="text-muted small text-truncate">{{user.email}}</span>
+        </div>
+    </div>
+    <div class="delete-btn">
+      <div class="btn-danger btn" (click)="deleteUser()">x</div>
+    </div>
+</li>

@@ -1,0 +1,16 @@
+.home-container{
+    margin-top: 30px;
+    text-align: center;
+    .logos{
+        width: 630px;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        img{
+            height: 100%;
+            object-fit: contain;
+            max-width: 280px;
+        }
+    }
+}

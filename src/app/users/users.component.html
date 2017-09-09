@@ -1,0 +1,6 @@
+<div id="usersPage">
+    <div class="add-user-btn">
+        <button (click)="showAddUserModal()" class="btn btn-info btn-lg">+</button>
+    </div>
+    <app-users-list (onUserDeleteEvent)="deleteUser($event);" [users]="usersList"></app-users-list>
+</div>

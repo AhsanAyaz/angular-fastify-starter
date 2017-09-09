@@ -1,0 +1,18 @@
+
+{
+    "verbose": false,
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules"
+    ],
+    "execMap": {
+      "js": "babel-node"
+    },
+    "watch": [
+      "server"
+    ],
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "js json"
+  }
